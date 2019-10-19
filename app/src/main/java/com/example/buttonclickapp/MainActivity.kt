@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     private var userInput: EditText? = null
     private var button: Button? = null
     private var textView: TextView? = null
+    private var numTimesClicked = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
