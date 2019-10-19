@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.util.Log
+import android.view.ActionMode
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -40,7 +41,13 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
+    }
 
+    override fun onStart() {
+        super.onStart()
+    }
 
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
     }
 }
