@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
 
         var userInput: EditText = findViewById<EditText>(R.id.editText)
         var button:Button = findViewById<Button>(R.id.button)
