@@ -23,16 +23,18 @@ class MainActivity : AppCompatActivity() {
 
         userInput = findViewById<EditText>(R.id.editText)
         button = findViewById<Button>(R.id.button)
-        textView = findViewById<TextView>(R.id.textView2)
+        textView = findViewById<TextView>(R.id.textView)
         textView?.text = ""
         textView?.movementMethod = ScrollingMovementMethod()
 
         button?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 numTimesClicked += 1
-                textView?.append("\n The button got tapped $numTimesClicked time")
+                textView?.append("The button got tapped $numTimesClicked time")
                 if (numTimesClicked != 1){
-                    textView?.append("s")
+                    textView?.append("s\n")
+                }else{
+                    textView?.append("\n")
                 }
             }
         })
