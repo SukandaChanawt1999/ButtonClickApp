@@ -31,7 +31,8 @@ class MainActivity : AppCompatActivity() {
 
                 textView?.append(userInput.text )
                 textView?.append("\n")
-                userInput.text.clear()
+//                userInput.text.clear()
+                userInput.setText("")
 
             }
         })
