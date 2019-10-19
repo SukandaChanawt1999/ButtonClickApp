@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
         button?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
 
-                textView?.append(userInput?.text + "\n")
+                textView?.append(userInput?.text )
+                textView?.append("\n")
 
             }
         })
