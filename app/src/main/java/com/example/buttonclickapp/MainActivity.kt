@@ -2,6 +2,7 @@ package com.example.buttonclickapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -22,6 +23,12 @@ class MainActivity : AppCompatActivity() {
         userInput = findViewById<EditText>(R.id.editText)
         button = findViewById<Button>(R.id.button)
         textView = findViewById<TextView>(R.id.textView2)
+
+        button?.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+        })
 
 
     }
