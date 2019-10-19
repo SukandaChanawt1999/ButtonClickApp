@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         button?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                numTimesClicked += 1
+                textView?.append("\n The button got tapped $numTimesClicked time")
             }
         })
 
