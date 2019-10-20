@@ -11,7 +11,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
-private val TAG = "MainActivtiy"
+private const val TAG = "MainActivtiy"
+private const val TEXT_CONTENTS = "TextContent"
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onStart() {
-        Log.d(TAG,"onStart: called")
+        Log.d(TAG,"onStart : called")
         super.onStart()
     }
 
@@ -57,6 +58,12 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         Log.d(TAG,"onResume: called")
         super.onResume()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        Log.d(TAG,"onSaveInstanceState: called")
+        super.onSaveInstanceState(outState)
+        outState?.putString(TEXT_CONTENTS,textView?.toString())
     }
 
     override fun onPause() {
