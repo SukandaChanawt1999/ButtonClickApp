@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         Log.d(TAG,"onRestoreInstanceState: called")
         super.onRestoreInstanceState(savedInstanceState)
+        val savedString = savedInstanceState?.getString(TEXT_CONTENTS,"")
+        textView?.text = savedString
     }
 
     override fun onResume() {
